@@ -1,4 +1,4 @@
-package br.com.oivato.todolist.controller;
+package br.com.oivato.todolist.entity;
 
 import javax.persistence.*;
 
