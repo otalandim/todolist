@@ -2,6 +2,7 @@ package br.com.oivato.todolist.service;
 
 import br.com.oivato.todolist.entity.Todo;
 import br.com.oivato.todolist.repository.TodoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 public class TodoService {
-
+    @Autowired
     private TodoRepository todoRepository;
 
     public List<Todo> create(Todo todo) {
